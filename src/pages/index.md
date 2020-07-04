@@ -12,7 +12,7 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-image: /img/home-jumbotron.jpg
+image: /img/me.jpg
 name: Job Wind
 occupation: FREELANCE FULL STACK DEVELOPER
 email:
