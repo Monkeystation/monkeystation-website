@@ -17,16 +17,16 @@ export const IndexPageTemplate = ({
   linkedin
 }) => (
   <div>
-    <p>{image}</p>
+    <p>{!!image.childImageSharp ? image.childImageSharp.fluid.src : image}</p>
     <p>{name}</p>
     <p>{occupation}</p>
-    <p>{email}</p>
+    <p>{email.caption}</p>
     <p>{description}</p>
-    <p>{references}</p>
-    <p>{education}</p>
+    <p>{references[0].author.name}</p>
+    <p>{education[0].name}</p>
     <p>{dev_skills}</p>
     <p>{design_skills}</p>
-    <p>{linkedin}</p>
+    <p>{linkedin.caption}</p>
   </div>
 )
 
@@ -99,15 +99,9 @@ export const pageQuery = graphql`
             description
           }
         }
-        education {
-          school
-        }
-        dev_skills {
-          skill
-        }
-        design_skills {
-          skill
-        }
+        education 
+        dev_skills
+        design_skills 
         linkedin {
           caption
           link
