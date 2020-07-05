@@ -133,7 +133,9 @@ export const pageQuery = graphql`
             description
           }
         }
-        education 
+        education {
+          school
+        }
         dev_skills
         design_skills 
         linkedin {

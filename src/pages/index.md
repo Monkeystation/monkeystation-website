@@ -19,8 +19,8 @@ references:
       name: Matthijs Horsman
       description: Executive Producer at Resn
 education:
-  - University of the Arts Utrecht (Bachelor)
-  - HAN University of Applied Sciences (Propaedeutic)
+  - school: University of the Arts Utrecht (Bachelor)
+  - school: HAN University of Applied Sciences (Propaedeutic)
 dev_skills: HTML, JavaScript, ReactJS, React Native, Node.js, Apple Xcode, FireBase, Social Media APIs, Ghost, Wix, Squarespace, GitHub, PHP, SQL, JSON, XML
 description: >-
   Hi, I'm a web developer and innovative mobile application creator with over 15

@@ -39,7 +39,8 @@ collections:
           - label: "Education"
             name: "education"
             widget: "list"
-            field: {label: School, name: school, widget: string}
+            fields: 
+              - {label: School, name: school, widget: string}
           - {label: Development Skills, name: dev_skills, widget: string}
           - {label: Design Skills, name: design_skills, widget: string}
           - {label: LinkedIn, name: linkedin, widget: object, fields: [{label: Caption, name: caption, widget: string}, {label: Link, name: link, widget: text}]}
