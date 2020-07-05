@@ -30,7 +30,7 @@ references:
       name: Matthijs Horsman
       description: Executive Producer at Resn
 education:
-  - Executive Producer at Resn
+  - University of the Arts Utrecht (Bachelor)
   - HAN University of Applied Sciences (Propaedeutic)
 intro:
   blurbs:
