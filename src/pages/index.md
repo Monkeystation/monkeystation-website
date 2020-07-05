@@ -1,9 +1,7 @@
 ---
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
-design_skills:
-  - Concept, Branding, Photography, Photoshop, Illustrator, Video- & Audio
-    Editing
+design_skills: Concept, Branding, Photography, Photoshop, Illustrator, Video- & Audio Editing
 templateKey: index-page
 mainpitch:
   title: Why Kaldi
@@ -67,9 +65,9 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-dev_skills:
-  - HTML, JavaScript, ReactJS, React Native, Node.js, Apple Xcode, FireBase,
-    Social Media APIs, Ghost, Wix, Squarespace, GitHub, PHP, SQL, JSON, XML
+dev_skills: HTML, JavaScript, ReactJS, React Native, Node.js, Apple Xcode,
+  FireBase, Social Media APIs, Ghost, Wix, Squarespace, GitHub, PHP, SQL, JSON,
+  XML
 title: Great coffee with a conscience
 main:
   heading: Great coffee with no compromises
