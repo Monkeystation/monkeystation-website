@@ -9,11 +9,9 @@ email:
   link: mailto:job@monkeystation.nl
 description: >-
   Hi, I'm a web developer and innovative mobile application creator with over 15
-  years of experience.
+  years of experience.\
 
-
-  If you need help to turn your ideas into reality, I am your man. I am what you would call a "one-stop shop", having considerable experience in the technical realisation and a good understanding of the creative side of the process.
-
+  If you need help to turn your ideas into reality, I am your man. I am what you would call a "one-stop shop", having considerable experience in the technical realisation and a good understanding of the creative side of the process.\
 
   I have worked with a wide variety of clients such as Suzuki, ASICS, IKEA, TomTom, Brooks, KLM and many more.
 references:
