@@ -15,20 +15,54 @@ export const IndexPageTemplate = ({
   dev_skills,
   design_skills,
   linkedin
-}) => (
-  <div>
-    <p>{!!image.childImageSharp ? image.childImageSharp.fluid.src : image}</p>
-    <p>{name}</p>
-    <p>{occupation}</p>
-    <p>{email.caption}</p>
-    <p>{description}</p>
-    <p>{references[0].author.name}</p>
-    <p>{education[0].name}</p>
-    <p>{dev_skills}</p>
-    <p>{design_skills}</p>
-    <p>{linkedin.caption}</p>
-  </div>
-)
+}) => {
+  const imageUrl = !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+  return (
+    <div className="is-fullheight">
+      <div className="columns is-tablet is-fullheight is-gapless">
+        <div className="column image" style={{backgroundImage:`url(${imageUrl})`}}></div>
+        <div className="column content main-content">
+          <div className="content">
+            <h4 className="white-text title is-4 has-text-centered-mobile" id="name">{name}</h4>
+            <h6 className="subtitle is-6 mb-0 has-text-centered-mobile is-uppercase" id="occupation">{occupation}</h6>
+          </div>
+          <div className="content">
+            <a className="button is-primary is-fullwidth is-outlined" href={`${email.link}`}>{email.caption}</a>
+          </div>
+          <div className="content">
+            <p>{description}</p>
+          </div>
+          <div className="content">
+            <h6 className="subtitle is-6 mb-1 is-uppercase">REFERENCES</h6>
+            {references.map((ref) => (
+              <blockquote key={ref.author.name}>
+                <p>{`“${ref.quote}”`}</p>
+                <footer className="blue-text">{`${ref.author.name}, `}<cite>{ref.author.description}</cite></footer>
+              </blockquote>
+            ))}
+          </div>
+          <div className="content">
+            <h6 className="subtitle is-6 mb-1 is-uppercase">EDUCATION</h6>
+            {education.map((el) => (
+              <p key={el.school}>{el.school}</p>
+            ))}
+          </div>
+          <div className="content">
+            <h6 className="subtitle is-6 mb-1 is-uppercase">DEVELOPMENT SKILLS</h6>
+            <p>{dev_skills}</p>
+          </div>
+          <div className="content">
+            <h6 className="subtitle is-6 mb-1 is-uppercase">CREATIVE SKILLS</h6>
+            <p>{design_skills}</p>
+          </div>
+          <div className="content">
+            <a className="button is-primary is-fullwidth is-outlined" href={`${linkedin.link}`}>{linkedin.caption}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -38,8 +72,8 @@ IndexPageTemplate.propTypes = {
   description: PropTypes.string,
   references: PropTypes.array,
   education: PropTypes.array,
-  dev_skills: PropTypes.array,
-  design_skills: PropTypes.array,
+  dev_skills: PropTypes.string,
+  design_skills: PropTypes.string,
   linkedin: PropTypes.object,
 }
 

@@ -1,5 +1,8 @@
 ---
-design_skills: Concept, Branding, Photography, Photoshop, Illustrator, Video- & Audio Editing
+subheading: Support sustainable farming while enjoying a cup
+design_skills:
+  - Concept, Branding, Photography, Photoshop, Illustrator, Video- & Audio
+    Editing
 templateKey: index-page
 image: /img/me.jpg
 name: Job Wind
@@ -21,7 +24,10 @@ references:
 education:
   - University of the Arts Utrecht (Bachelor)
   - HAN University of Applied Sciences (Propaedeutic)
-dev_skills: HTML, JavaScript, ReactJS, React Native, Node.js, Apple Xcode, FireBase, Social Media APIs, Ghost, Wix, Squarespace, GitHub, PHP, SQL, JSON, XML
+dev_skills:
+  - HTML, JavaScript, ReactJS, React Native, Node.js, Apple Xcode, FireBase,
+    Social Media APIs, Ghost, Wix, Squarespace, GitHub, PHP, SQL, JSON, XML
+title: Great coffee with a conscience
 description: >-
   Hi, I'm a web developer and innovative mobile application creator with over 15
   years of experience.\

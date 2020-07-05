@@ -15,8 +15,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         description={data.description}
         references={data.references || []}
         education={data.education || []}
-        dev_skills={data.dev_skills || []}
-        design_skills={data.design_skills || []}
+        dev_skills={data.dev_skills}
+        design_skills={data.design_skills}
         linkedin={data.linkedin || {}}
       />
     )
