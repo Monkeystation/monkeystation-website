@@ -14,7 +14,7 @@ mainpitch:
     profits are reinvested in their communities.
 image: /img/me.jpg
 name: Job Wind
-occupation: FREELANCE FULL STACK DEVELOPER
+occupation: Freelance full-stack developer
 email:
   caption: Send me a message
   link: mailto:job@monkeystation.nl
