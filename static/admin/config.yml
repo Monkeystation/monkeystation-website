@@ -36,11 +36,7 @@ collections:
                 fields:
                   - {label: Name, name: name, widget: string, default: "Job Wind"}
                   - {label: Description, name: description, widget: string, default: "Owner at Monkey Station"}
-          - label: "Education"
-            name: "education"
-            widget: "list"
-            fields: 
-              - {label: School, name: school, widget: string}
+          - {label: Education, name: education, widget: list}
           - {label: Development Skills, name: dev_skills, widget: string}
           - {label: Design Skills, name: design_skills, widget: string}
           - {label: LinkedIn, name: linkedin, widget: object, fields: [{label: Caption, name: caption, widget: string}, {label: Link, name: link, widget: text}]}

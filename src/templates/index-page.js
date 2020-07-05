@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
           <div className="content">
             <h6 className="subtitle is-6 mb-1 is-uppercase">EDUCATION</h6>
             {education.map((el) => (
-              <p key={el.school}>{el.school}</p>
+              <p key={el}>{el}</p>
             ))}
           </div>
           <div className="content">
@@ -133,9 +133,7 @@ export const pageQuery = graphql`
             description
           }
         }
-        education {
-          school
-        }
+        education 
         dev_skills
         design_skills 
         linkedin {
