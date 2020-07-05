@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import showdown from 'showdown'
 
 import Layout from '../components/Layout'
+
+const converter = new showdown.Converter()
 
 export const IndexPageTemplate = ({
   image,
@@ -29,9 +32,7 @@ export const IndexPageTemplate = ({
           <div className="content">
             <a className="button is-primary is-fullwidth is-outlined has-text-weight-bold" href={`${email.link}`}>{email.caption}</a>
           </div>
-          <div className="content">
-            <p>{description}</p>
-          </div>
+          <div className="content" dangerouslySetInnerHTML={{__html: converter.makeHtml(description)}} />
           <div className="content">
             <h6 className="subtitle is-6 mb-1 is-uppercase">REFERENCES</h6>
             {references.map((ref) => (
@@ -79,7 +80,7 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log(data)
   return (
     <Layout>
       <IndexPageTemplate
