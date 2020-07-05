@@ -3,7 +3,7 @@ design_skills: Concept, Branding, Photography, Photoshop, Illustrator, Video- & 
 templateKey: index-page
 image: /img/me.jpg
 name: Job Wind
-occupation: Freelance full-stack developer
+occupation: Freelance full stack developer
 email:
   caption: Send me a message
   link: mailto:job@monkeystation.nl
