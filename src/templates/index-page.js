@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
             <h6 className="subtitle is-6 mb-0 has-text-centered-mobile is-uppercase" id="occupation">{occupation}</h6>
           </div>
           <div className="content">
-            <a className="button is-primary is-fullwidth is-outlined" href={`${email.link}`}>{email.caption}</a>
+            <a className="button is-primary is-fullwidth is-outlined has-text-weight-bold" href={`${email.link}`}>{email.caption}</a>
           </div>
           <div className="content">
             <p>{description}</p>
@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
           <div className="content">
             <h6 className="subtitle is-6 mb-1 is-uppercase">EDUCATION</h6>
             {education.map((el) => (
-              <p key={el}>{el}</p>
+              <p key={el} className="mb-0">{el}</p>
             ))}
           </div>
           <div className="content">
@@ -56,7 +56,7 @@ export const IndexPageTemplate = ({
             <p>{design_skills}</p>
           </div>
           <div className="content">
-            <a className="button is-primary is-fullwidth is-outlined" href={`${linkedin.link}`}>{linkedin.caption}</a>
+            <a className="button is-primary is-fullwidth is-outlined has-text-weight-bold" href={`${linkedin.link}`}>{linkedin.caption}</a>
           </div>
         </div>
       </div>
